@@ -27,7 +27,7 @@ start = DummyOperator(
 
 send_email = EmailOperator(
     task_id='send_email',
-    to='susmapant@gmail.com',
+    to='manishakhadka@peakvoyage.com',
     subject='Airflow Email Test',
     html_content='Good morning didi. I hope u are doing well',
     dag=dag,
