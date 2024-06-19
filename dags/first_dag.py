@@ -1,16 +1,5 @@
 
 
-
-
-
-
-
-
-
-
-
-
-
 from airflow import DAG
 from airflow.operators.email_operator import EmailOperator
 from airflow.operators.dummy_operator import DummyOperator
@@ -38,9 +27,9 @@ start = DummyOperator(
 
 send_email = EmailOperator(
     task_id='send_email',
-    to='manishakhadka228@gmail.com',
+    to='susmapant@gmail.com',
     subject='Airflow Email Test',
-    html_content='This is a test email sent from Airflow.',
+    html_content='Good morning didi. I hope u are doing well',
     dag=dag,
 )
 
